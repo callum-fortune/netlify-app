@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls } from '@react-three/drei';
 
@@ -23,11 +24,13 @@ function Build() {
 export default function Three() {
 
     return (
-        <Canvas>
-            <OrbitControls />
-            <ambientLight intensity={0.5} position={[20, 10, 10]} />;
-            <spotLight intensity={0.6} position={[30,-30,10]} angle={0.2}></spotLight>
-            <Build />
-        </Canvas>
+        <div>
+            <Canvas>
+                <OrbitControls />
+                <ambientLight intensity={0.5} position={[20, 10, 10]} />;
+                <spotLight intensity={0.6} position={[30,-30,10]} angle={0.2}></spotLight>
+                <Build />
+            </Canvas>
+        </div>
     )
 }
