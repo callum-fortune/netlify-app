@@ -7,8 +7,8 @@ function App() {
       <Navigation />
       <div className="landing-page-grid-container">
         <div className="text-container">
-          <h2 className="centerText">Name...</h2>
-          <h1 className="centerText">Web developer</h1>
+          <h2 className="centerText">Hi I'm</h2>
+          <h1 className="centerText">Name...</h1>
           <h2 className="centerText" style={{color: 'var(--nice-grey)'}}>Web developer</h2>
           </div>
       <Three />
