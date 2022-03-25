@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useRef } from 'react';
 import { Canvas, useFrame, useLoader } from "@react-three/fiber";
 import { Stars } from "@react-three/drei";
 import { TextureLoader } from "three/src/loaders/TextureLoader.js";
