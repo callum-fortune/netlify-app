@@ -11,6 +11,7 @@
 
 body {
     background-color: #292929;
+    overflow-x: hidden;
 }
 
 a {
@@ -28,6 +29,6 @@ canvas {
 
 .landing-page-grid-container {
     display: grid;
-    grid-template-columns: 2;
-    grid-template-rows: 1;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: 100vh;
 }
