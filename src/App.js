@@ -6,7 +6,10 @@ function App() {
     <div className="App">
       <Navigation />
       <div className="landing-page-grid-container">
-        <div><h1>Hello world.</h1></div>
+        <div className="text-container">
+          <h1 className="centerText">Name...</h1>
+          <h1 className="centerText">Web developer</h1>
+          </div>
       <Three />
       </div>
     </div>

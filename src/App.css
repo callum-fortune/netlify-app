@@ -32,3 +32,20 @@ canvas {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     grid-template-rows: 100vh;
 }
+
+.landing-page-grid-container>.text-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.landing-page-grid-container>.text-container>h1 {
+    font-weight: bold;
+}
+
+.centerText {
+    text-align:center;
+    line-height:100vh;
+    color:white;
+}
