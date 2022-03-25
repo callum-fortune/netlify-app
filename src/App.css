@@ -50,3 +50,13 @@ canvas {
     text-align:center;
     color:white;
 }
+
+@media screen and (max-width: 750px){
+
+    .landing-page-grid-container {
+        display: inline-grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: minmax(0, 40vh) minmax(0,40vh);
+    }
+
+}
