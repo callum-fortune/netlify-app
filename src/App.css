@@ -1,5 +1,6 @@
 :root {
     --bright-green: #83E8BA;
+    --nice-grey: #ababab;
 }
 
 * {
@@ -30,7 +31,7 @@ canvas {
 .landing-page-grid-container {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    grid-template-rows: 100vh;
+    grid-template-rows: 90vh;
 }
 
 .landing-page-grid-container>.text-container {
@@ -38,6 +39,7 @@ canvas {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    padding-left: 50px;
 }
 
 .landing-page-grid-container>.text-container>h1 {
@@ -46,6 +48,5 @@ canvas {
 
 .centerText {
     text-align:center;
-    line-height:100vh;
     color:white;
 }
