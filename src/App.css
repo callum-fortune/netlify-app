@@ -23,3 +23,11 @@ canvas {
     height:100vw;
     /* margin-top: 0; */
 }
+
+/* main */
+
+.landing-page-grid-container {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 1;
+}
