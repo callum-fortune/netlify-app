@@ -12,7 +12,7 @@
 
 body {
     background-color: #292929;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 a {
@@ -31,7 +31,7 @@ canvas {
 .landing-page-grid-container {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    grid-template-rows: 90vh;
+    grid-template-rows: 100vh;
 }
 
 .landing-page-grid-container>.text-container {
@@ -39,11 +39,17 @@ canvas {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    padding-left: 50px;
+    padding-left: 60px;
 }
 
 .landing-page-grid-container>.text-container>h1 {
     font-weight: bold;
+}
+
+.landing-page-grid-container>.text-container>p {
+    text-align:left;
+    width:50%;
+    margin-top:50px;
 }
 
 .centerText {
@@ -54,9 +60,29 @@ canvas {
 @media screen and (max-width: 750px){
 
     .landing-page-grid-container {
-        display: inline-grid;
+        /* display: inline-grid;
         grid-template-columns: 100vw;
-        grid-template-rows: minmax(0, 40vh) minmax(0,40vh);
+        grid-template-rows: minmax(0, 40vh) minmax(0,40vh); */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        font-size: 0.6rem;
+    }
+
+    .landing-page-grid-container>.text-container {
+        padding: 0;
+        width: 50%;
+    }
+
+    .landing-page-grid-container>.text-container>p {
+        width: 100%;
+    }
+
+    .three-object {
+        display:none;
     }
 
 }
