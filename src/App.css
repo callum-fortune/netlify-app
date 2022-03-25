@@ -69,12 +69,12 @@ canvas {
         flex-direction: column;
         height: 100vh;
         width: 100vw;
-        font-size: 0.6rem;
+        font-size: 0.8rem;
     }
 
     .landing-page-grid-container>.text-container {
         padding: 0;
-        width: 50%;
+        width: 80%;
     }
 
     .landing-page-grid-container>.text-container>p {
