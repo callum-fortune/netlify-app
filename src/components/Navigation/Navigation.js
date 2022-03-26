@@ -19,7 +19,7 @@ class Navigation extends Component {
     render(){
         return (
             <span style={{display: 'block', padding: 10, position: 'absolute', zIndex: 1}}>
-                <h1 className="nav-header">&lt;callumfortune.com /&gt;</h1>
+                <Link to="/"><h1 className="nav-header">&lt;callumfortune.com /&gt;</h1></Link>
                 <ul className={`nav-links-container ${this.state.toggleOpen ? 'nav-mobile-open' : ''}`}>
                     <li className="nav-link"><Link to="/projects" >Projects</Link></li>
                     <li className="nav-link"><Link to="/photography" >Photography</Link></li>
