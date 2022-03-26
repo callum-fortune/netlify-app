@@ -21,6 +21,7 @@
     color: white;
     height:6vh;
     width:100vw;
+    padding-right: 10px;
 }
 
 .nav-links-container>.nav-link {
@@ -45,6 +46,8 @@
     font-size: inherit;
     line-height:6vh;
     margin-left:50px;
+    position: relative;
+    z-index: 10;
 }
 
 .nav-links-container>.nav-link>a>button{
@@ -70,10 +73,10 @@
         flex-direction: column;
         position: fixed;
         justify-content: flex-start;
-        padding: 50px 0px;
+        padding: 90px 0px;
         left: -100vw;
         transition: 0.3s ease;
-        background-color:#292929;
+        background-color:#303030;
         height: fit-content;
     }
 
