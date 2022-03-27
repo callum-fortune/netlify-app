@@ -79,7 +79,7 @@ class HomePage extends Component {
                         </div>
                         <div className="photo-thumbnail-container">
                             <div className="photo-thumbnail-img-container">
-                                <img src="assets/images/IMG_1773.jpg" alt="" />
+                                <img src="assets/images/cowinhedge.jpg" alt="" />
                             </div>
                             <div className="photo-thumbnail-desc-container" >
                                 <span>
