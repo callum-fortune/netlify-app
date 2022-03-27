@@ -33,3 +33,7 @@ ul {
 }
 
 /* main */
+
+.page-section {
+    min-height: 100vh;
+}

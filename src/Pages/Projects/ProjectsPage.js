@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Navigation from '../../components/Navigation/Navigation';
+import Footer from '../../components/Footer/Footer';
 import "./ProjectsPage.css";
 
 class ProjectsPage extends Component {
@@ -14,6 +15,7 @@ class ProjectsPage extends Component {
         return (
             <div>
                 <Navigation />
+                <Footer />
             </div>
         )
     }

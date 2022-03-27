@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 import Navigation from '../../components/Navigation/Navigation';
+import Footer from '../../components/Footer/Footer';
 import Three from "../../components/Three/Three.js"
 import '../../App.css';
 import "./HomePage.css";
@@ -43,13 +45,58 @@ class HomePage extends Component {
                     </div>
                     </div>
                 </section>
-                <footer className="footer">
-                    <div className="footer-grid-container">
-                    <p className="footer-info-item">&copy; Callum Fortune 2022</p>
-                    <p className="footer-info-item"><a href="/">GitHub</a></p>
-                    <p className="footer-info-item"><a href="/">callumfortune03@outlook.com</a></p>
+                <section className="page-section photography">
+                    <div className="photography-text-container">
+                        <h1>&lt;My Photographs&gt;</h1>
+                        <h2>A short collection...</h2>
                     </div>
-                </footer>
+                    <div className="photo-thumbnails-grid-container" >
+                        <div className="photo-thumbnail-container">
+                            <div className="photo-thumbnail-img-container">
+                                <img src="assets/aboutmeimg.png" alt="" />
+                            </div>
+                            <div className="photo-thumbnail-desc-container" >
+                                <span>
+                                    <h1>Date:</h1><h2>25/03/22</h2>
+                                </span>
+                                <span>
+                                    <h1>Location:</h1><h2>Home</h2>
+                                </span>
+                            </div>
+                        </div>
+                        <div className="photo-thumbnail-container">
+                            <div className="photo-thumbnail-img-container">
+                                <img src="assets/aboutmeimg.png" alt="" />
+                            </div>
+                            <div className="photo-thumbnail-desc-container" >
+                                <span>
+                                    <h1>Date:</h1><h2>25/03/22</h2>
+                                </span>
+                                <span>
+                                    <h1>Location:</h1><h2>Home</h2>
+                                </span>
+                            </div>
+                        </div>
+                        <div className="photo-thumbnail-container">
+                            <div className="photo-thumbnail-img-container">
+                                <img src="assets/aboutmeimg.png" alt="" />
+                            </div>
+                            <div className="photo-thumbnail-desc-container" >
+                                <span>
+                                    <h1>Date:</h1><h2>25/03/22</h2>
+                                </span>
+                                <span>
+                                    <h1>Location:</h1><h2>Home</h2>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="photography-view-more-container">
+                        <h1>Why stop here? Check out more photos on my photography page...</h1>
+                        <Link to="photography"><button>Lets go</button></Link>
+                    </div>
+                </section>
+                <Footer />
             </span>
         )
     }

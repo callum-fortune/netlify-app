@@ -37,7 +37,7 @@ ul {
 .page-section {
     position: relative;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .page-section.about-me {
@@ -81,6 +81,7 @@ ul {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     padding: 100px;
+    min-height: 100vh;
 }
 
 .about-me-main-img {
@@ -111,25 +112,115 @@ ul {
     font-weight:lighter;
 }
 
+.page-section.photography {
 
-
-
-
-
-
-.footer {
-    height:200px;
-    color: white;
-    padding:40px;
 }
 
-.footer>.footer-grid-container {
-    display:grid;
+.photography-text-container {
+    display: flex;
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.photography-text-container>h1, .photography-text-container>h2 {
+    margin-top: 20px;
+    font-weight: lighter;
+
+}
+
+.photography-text-container>h1 {
+    margin-top:80px;
+    font-size:30px;
+    color: white;
+    font-weight: lighter;
+}
+
+.photo-thumbnails-grid-container {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    height:100%;
+    grid-gap: 5vw;
+    padding: 50px;
     width:100%;
+    height: fit-content;
 }
+
+.photo-thumbnail-container {
+    background-color:white;
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+}
+
+.photo-thumbnail-img-container {
+    width: 100%;
+    height:fit-content;
+}
+
+.photo-thumbnail-img-container>img {
+    width: 100%;
+    border-radius: 20px 0;
+}
+
+.photo-thumbnail-desc-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    color:lightgrey;
+    padding: 10px 15px 15px 15px;
+}
+
+.photo-thumbnail-desc-container>span {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.photo-thumbnail-desc-container>span>h1, h2 {
+    color: var(--nice-grey);
+    font-weight:lighter;
+    font-size: 1.2em;
+    display: inline;
+}
+
+.photo-thumbnail-desc-container>span>h1 {
+    font-size: 20px;
+    color: #292929;
+}
+
+.photography-view-more-container {
+    position: relative;
+    width:100%;
+    height:auto;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.photography-view-more-container>h1 {
+    font-size: 15px;
+    font-weight: lighter;
+    margin: 40px auto;
+}
+
+.photography-view-more-container button {
+    border: none;
+    padding:10px;
+    background-color: transparent;
+    border: 2px solid var(--bright-green);
+    color: var(--bright-green);
+    border-radius: 5px;
+}
+
 
 .footer>.footer-grid-container>.footer-info-item {
     text-align:center;
@@ -177,10 +268,14 @@ ul {
         margin:0 auto 20px auto;
     }
 
-
-    .footer>.footer-grid-container>.footer-info-item {
-        text-align:center;
-        font-size:0.6rem;
+    .photo-thumbnails-grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 5vw;
+        padding: 50px;
+        width:100%;
+        height: fit-content;;
     }
 
 }
