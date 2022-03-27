@@ -53,7 +53,7 @@ class HomePage extends Component {
                     <div className="photo-thumbnails-grid-container" >
                         <div className="photo-thumbnail-container">
                             <div className="photo-thumbnail-img-container">
-                                <img src="assets/aboutmeimg.png" alt="" />
+                                <img src="assets/images/IMG_1109.jpg" alt="" />
                             </div>
                             <div className="photo-thumbnail-desc-container" >
                                 <span>
@@ -66,7 +66,7 @@ class HomePage extends Component {
                         </div>
                         <div className="photo-thumbnail-container">
                             <div className="photo-thumbnail-img-container">
-                                <img src="assets/aboutmeimg.png" alt="" />
+                                <img src="assets/images/IMG_1701[1]-2.jpg" alt="" />
                             </div>
                             <div className="photo-thumbnail-desc-container" >
                                 <span>
@@ -79,7 +79,7 @@ class HomePage extends Component {
                         </div>
                         <div className="photo-thumbnail-container">
                             <div className="photo-thumbnail-img-container">
-                                <img src="assets/aboutmeimg.png" alt="" />
+                                <img src="assets/images/IMG_1773.jpg" alt="" />
                             </div>
                             <div className="photo-thumbnail-desc-container" >
                                 <span>
@@ -95,6 +95,9 @@ class HomePage extends Component {
                         <h1>Why stop here? Check out more photos on my photography page...</h1>
                         <Link to="photography"><button>Lets go</button></Link>
                     </div>
+                </section>
+                <section className="page-section projects">
+                    <h1>&lt;Projects section&gt;</h1>
                 </section>
                 <Footer />
             </span>
